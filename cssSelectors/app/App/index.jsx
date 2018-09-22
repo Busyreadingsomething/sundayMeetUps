@@ -1,6 +1,7 @@
 import React from 'react';
 import NavBar from '../Nav/index';
 import Submission from '../Submission/index';
+import Modal from '../Modal/index';
 
 class App extends React.Component {
   constructor(props) {
@@ -20,12 +21,12 @@ class App extends React.Component {
   }
 
   render() {
-    const { links, submitted, toggleModal } = this.state;
+    const { links, submitted, data } = this.state;
     return (
       <div className="app-container">
         <NavBar links={links} />
-        <Submission toggle={data => toggleModal(data)} />
-        { submitted && <Modal />}
+        <Submission toggle={data => this.toggleModal(data)} />
+        { submitted && <Modal data={data}/>}
       </div>
     );
   }
