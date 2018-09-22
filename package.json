@@ -1,0 +1,27 @@
+{
+  "name": "sundaymeetups",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Busyreadingsomething/sundayMeetUps.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Busyreadingsomething/sundayMeetUps/issues"
+  },
+  "homepage": "https://github.com/Busyreadingsomething/sundayMeetUps#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "styled-components": "^3.4.9",
+    "webpack": "^4.19.1",
+    "webpack-cli": "^3.1.0"
+  }
+}
