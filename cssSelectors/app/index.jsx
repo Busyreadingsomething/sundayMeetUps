@@ -4,5 +4,5 @@ import App from './App/index';
 
 ReactDOM.render(
   <App />,
-  document.getElementById('css-selector')
+  document.getElementById('css')
 );
