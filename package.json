@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "cssSelectorBuild": "webpack --config css.config.js --watch",
+    "cssSelectorBuild": "webpack --config webpackConfigFiles/css.config.js --watch",
     "cssSelectorStart": "node cssSelectors/cssServer.js"
   },
   "repository": {
