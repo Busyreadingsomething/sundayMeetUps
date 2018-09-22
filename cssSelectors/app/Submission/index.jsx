@@ -1,7 +1,7 @@
 import React from 'react';
 import Input from '../Input/index';
 
-class Submission extends React.Component {
+class Submission extends React.PureComponent {
   constructor(props) {
     super(props);
     this.state = {
@@ -17,9 +17,19 @@ class Submission extends React.Component {
     }), () => console.log(this.state));
   }
 
+  sendInfo(e) {
+    e.preventDefault();
+    this.props.toggle({...this.state});
+    this.setState(() => ({
+      name: '',
+      password: '',
+      bio: '',
+    }));
+  }
+
   render() {
     return (
-      <form>
+      <form action="" method="">
         {
           Object.keys(this.state).map(key => (
             <Input
@@ -30,6 +40,7 @@ class Submission extends React.Component {
             />)
           )
         }
+        <button type="submit" onClick={e => this.sendInfo(e)}>SUBMIT</button>
       </form>
     );
   }
